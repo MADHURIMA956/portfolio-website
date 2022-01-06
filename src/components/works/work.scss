@@ -1,3 +1,98 @@
+@import "../../global.scss";
+
 .works {
-  background-color: #ff5959;
+  background-color: #000b49;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .arrow {
+    height: 60px;
+    position: absolute;
+
+    &.left {
+      left: 100px;
+      transform: rotateY(180deg);
+    }
+    &.right {
+      right: 100px;
+    }
+  }
+
+  .slider {
+    height: 350px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .item {
+        width: 700px;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .left {
+          flex: 4;
+          height: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .leftpart {
+            width: 90%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h2 {
+              font-size: 20px;
+            }
+            p {
+              font-size: 13px;
+              justify-content: space-around;
+            }
+            .project-btn {
+              margin: 0;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 70%;
+              button {
+                width: 40%;
+                border-radius: 5px;
+                font-size: 14px;
+                padding: 7px;
+                border-radius: 10px;
+                background-color: $mainColor;
+                color: #ffffff;
+                border: none;
+              }
+            }
+          }
+        }
+        .right {
+          flex: 8;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          img {
+            width: 400px;
+            height: 100%;
+            transform: rotate(-10deg);
+          }
+        }
+      }
+    }
+  }
 }
