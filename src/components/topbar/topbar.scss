@@ -21,6 +21,9 @@
         display: flex;
         align-items: center;
         margin-left: 30px;
+        @include mobile {
+          margin-left: 10px;
+        }
       }
       img {
         width: 20px;

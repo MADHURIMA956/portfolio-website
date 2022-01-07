@@ -8,10 +8,14 @@
   background-color: #ffffff;
   color: black;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-radius: 10px;
   box-shadow: 0px 0px 15px -8px black;
+  @include mobile {
+    width: 90%;
+    left: 15px;
+  }
 
   .close-btn {
     position: relative;

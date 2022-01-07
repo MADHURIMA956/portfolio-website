@@ -1,16 +1,23 @@
-$mainColor: #9b0000;
+@import "../../global.scss";
 
 .intro {
   background-color: #ffffff;
   display: flex;
 
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .left {
-    flex: 0.5;
+    flex: 0.7;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     overflow: hidden;
-
+    @include mobile {
+      margin-left: 0px;
+    }
     .imageCont {
       margin-left: 120px;
       width: 200px;
@@ -20,6 +27,11 @@ $mainColor: #9b0000;
       display: flex;
       align-items: flex-end;
       justify-content: center;
+      @include mobile {
+        align-items: flex-start;
+        justify-content: center;
+        margin: auto;
+      }
       img {
         height: 100%;
         width: 100%;
@@ -30,6 +42,12 @@ $mainColor: #9b0000;
       margin-left: 120px;
       margin-top: 20px;
       line-height: 40px;
+      @include mobile {
+        font-size: 12px;
+        line-height: 20px;
+        margin: auto;
+        padding: 10px 25px;
+      }
     }
     button {
       width: 20%;
@@ -41,10 +59,14 @@ $mainColor: #9b0000;
       background-color: $mainColor;
       color: #ffffff;
       border: none;
+      @include mobile {
+        width: 30%;
+        margin: auto;
+      }
     }
   }
   .right {
-    flex: 0.5;
+    flex: 0.3;
 
     .wrapper {
       width: 90%;
@@ -53,13 +75,26 @@ $mainColor: #9b0000;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      @include mobile {
+        width: 100%;
+        height: 90%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+      }
     }
     h1 {
       font-size: 60px;
       margin: 10px 0;
+      @include mobile {
+        font-size: 25px;
+      }
     }
     h2 {
       font-size: 35px;
+      @include mobile {
+        font-size: 25px;
+      }
     }
     h3 {
       font-size: 30px;
@@ -78,12 +113,19 @@ $mainColor: #9b0000;
           opacity: 0;
         }
       }
+      @include mobile {
+        font-size: 15px;
+      }
     }
   }
   a {
     position: absolute;
     bottom: 10px;
     left: 70%;
+    @include mobile {
+      bottom: 15px;
+      left: 45%;
+    }
     img {
       width: 30px;
       animation: arrowBlink 2s infinite;

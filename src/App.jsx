@@ -1,7 +1,5 @@
-// import { Contact } from "../components/Contact.jsx";
 import Topbar from "./components/topbar/Topbar.jsx";
 import Intro from "./components/intro/Intro.jsx";
-// import About from "./components/about/About.jsx";
 import Skill from "./components/skills/Skill.jsx";
 import Work from "./components/works/Work.jsx";
 import Contact from "./components/contact/Contact.jsx";

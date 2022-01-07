@@ -5,17 +5,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 
   h2 {
     margin-top: 40px;
     font-size: 30px;
+    @include mobile {
+      font-size: 20px;
+    }
   }
   ul {
     margin: 10px;
     padding: 0px;
     list-style: none;
     display: flex;
+    @include mobile {
+      margin: 10px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   .container {
     margin: 30px 10px;
@@ -24,6 +32,10 @@
     align-items: center;
     justify-self: center;
     flex-wrap: wrap;
+
+    @include mobile {
+      width: 100%;
+    }
     .items {
       width: 150px;
       height: 150px;
@@ -37,10 +49,18 @@
       position: relative;
       transition: all 0.5s ease;
       cursor: pointer;
+      @include mobile {
+        width: 80px;
+        height: 100px;
+        margin: auto;
+      }
 
       h3 {
         position: absolute;
         font-size: 20px;
+        @include mobile {
+          font-size: 15px;
+        }
       }
       img {
         width: 90%;

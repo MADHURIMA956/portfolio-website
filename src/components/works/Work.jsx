@@ -12,7 +12,7 @@ export default function Work() {
             imageicon:"https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png",
             btnCode: "Code",
             btnWebsite:"Website",
-            image:"images/walmart-website.png",
+            image:"images/walmart-website.PNG",
             code:"https://github.com/pabloescobar4/Walmart",
             website:"https://madhurima956.github.io/walmart-clone.github.io/walmart/index001.html",
         },
@@ -24,7 +24,7 @@ export default function Work() {
             "https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png",
             btnCode: "Code",
             btnWebsite:"Website",
-            image:"images/intern-website.png",
+            image:"images/intern-website.PNG",
             code:"https://github.com/RoushanFW196/intern-theoryclone-unit3-project",
             website:"https://intern-theory-clone.herokuapp.com/InternTheory"
         },
@@ -37,7 +37,7 @@ export default function Work() {
     }
     return (
         <div className="works" id="works">
-           <h2>Projects</h2>
+           {/* <h2>Projects</h2> */}
            <div className="slider" style={{transform:`translateX(-${currSlider *100}vw)`}}>
               {projectData.map(d=>(
               <div className="container">
