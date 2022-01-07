@@ -1,12 +1,21 @@
 import "./topbar.scss";
+import { useState } from "react";
 
 export default function Topbar({menuOpen , setMenuOpen}) {
+    const [show,setShow] =useState(false)
+    const handleClick=(val)=>{
+        show === val 
+        ?setShow(null)
+        :setShow(<span>madhurimabanerjee97@gmail.com</span>)
+        }
     return (
         <div className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro" className="logo"><img className="imgLogo" src="images/logo.jpg" alt="logo" />
-                    <span className="logoname">Madhurima</span></a>
+                    <div className="itemContainer">
+                        <img className="imgLogo" src="images/logo.jpg" alt="logo" /> <span >Madhurima</span>
+                    </div>
+
                     <div className="itemContainer">
                        <a href="https://github.com/MADHURIMA956"><img src="images/GitHub-icon.png" alt="github" /></a>
                     </div>
@@ -14,7 +23,7 @@ export default function Topbar({menuOpen , setMenuOpen}) {
                        <a href="https://www.linkedin.com/in/madhurima-banerjee-65415a191/"> <img src="images/linkedin.jpg" alt="linkedin" /></a>
                     </div>
                     <div className="itemContainer">
-                        <img src="images/email.jpg" alt="email" /><span>madhurimabanerjee97@gmail.com</span>
+                        <img onClick={()=>handleClick(false)} src="images/email.jpg" alt="email" />
                     </div>
                 </div>
                 <div className="right">
