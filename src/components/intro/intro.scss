@@ -1,3 +1,5 @@
+$mainColor: #9b0000;
+
 .intro {
   background-color: #ffffff;
   display: flex;
@@ -7,18 +9,24 @@
     overflow: hidden;
     .imageCont {
       margin-top: 30px;
-      width: 700px;
-      height: 700px;
-      background-color: #000b49;
+      margin-left: 120px;
+      width: 200px;
+      height: 200px;
+      background-color: $mainColor;
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      float: right;
       img {
         height: 100%;
-        border-radius: 45%;
+        width: 100%;
+        border-radius: 50%;
       }
+    }
+    h3 {
+      margin-left: 120px;
+      margin-top: 20px;
+      line-height: 40px;
     }
   }
   .right {
@@ -43,7 +51,7 @@
       font-size: 30px;
       span {
         font-size: inherit;
-        color: #000b49;
+        color: $mainColor;
       }
       .ityped-cursor {
         animation: blink 1s infinite;
