@@ -7,39 +7,32 @@ export default function Work() {
     const projectData = [
         {
             id:"1",
-            title:'Walmart',
-            des:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut ducimus aspernatur nisi corporis optio iusto pariatur perspiciatis consectetur. Omnis labore dolor asperiores modi aperiam quos, necessitatibus ut illo a. Sit?",
+            title:'Walmart-Clone',
+            des:"Using HTML, CSS and Javascript, I have built with group of 4, a clone of Walmart which is an E-commerce website where you can buy products from anywhere.",
             imageicon:"https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png",
             btnCode: "Code",
             btnWebsite:"Website",
-            image:"http://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/10/web-development-projects.png"
-
+            image:"images/walmart-website.png",
+            code:"https://github.com/pabloescobar4/Walmart",
+            website:"https://madhurima956.github.io/walmart-clone.github.io/walmart/index001.html",
         },
         {
             id:"2",
-            title:'Intern Theroy Clone',
-            des:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut ducimus aspernatur nisi corporis optio iusto pariatur perspiciatis consectetur. Omnis labore dolor asperiores modi aperiam quos, necessitatibus ut illo a. Sit?",
+            title:'Intern-Theroy-Clone',
+            des:"Using Node Js, Express Js and Javascript, EJS I have built with group of 5, a clone of Intern Theory where you can apply for internships and jobs.",
             imageicon:
             "https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png",
             btnCode: "Code",
             btnWebsite:"Website",
-            image:"http://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/10/web-development-projects.png"
-
+            image:"images/intern-website.png",
+            code:"https://github.com/RoushanFW196/intern-theoryclone-unit3-project",
+            website:"https://intern-theory-clone.herokuapp.com/InternTheory"
         },
-        {
-            id:"3",
-            title:'Intern ',
-            des:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut ducimus aspernatur nisi corporis optio iusto pariatur perspiciatis consectetur. Omnis labore dolor asperiores modi aperiam quos, necessitatibus ut illo a. Sit?",
-            imageicon:"https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png",
-            btnCode: "Code",
-            btnWebsite:"Website",
-            image:"http://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/10/web-development-projects.png"
-        }
        
     ];
     const handleClick=(way)=>{
         way === "left" 
-        ? setCurrSlider(currSlider > 0 ? currSlider -1 : 2) 
+        ? setCurrSlider(currSlider > 0 ? currSlider -1 : 1) 
         : setCurrSlider(currSlider<projectData.length -1? currSlider+1 : 0 ) 
     }
     return (
@@ -57,8 +50,8 @@ export default function Work() {
                                 <img src={d.imageicon} alt=""/>
                             </div>
                             <div className="project-btn">
-                                <button>{d.btnCode}</button>
-                                <button>{d.btnWebsite}</button>
+                            <button><a href={d.code}>{d.btnCode}</a></button>
+                                <button><a href={d.website}>{d.btnWebsite}</a></button>
                             </div>
                            </div>
                            
