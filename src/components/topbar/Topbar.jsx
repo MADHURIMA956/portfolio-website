@@ -1,13 +1,10 @@
 import "./topbar.scss";
+import "../popupmail/popupMail.scss";
 import { useState } from "react";
+import { PopupMail } from "../popupmail/PopupMail.jsx";
 
 export default function Topbar({menuOpen , setMenuOpen}) {
-    const [show,setShow] =useState(false)
-    const handleClick=(val)=>{
-        show === val 
-        ?setShow(null)
-        :setShow(<span>madhurimabanerjee97@gmail.com</span>)
-        }
+    const [showpopup,setShowpopup] =useState(false)
     return (
         <div className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
@@ -23,7 +20,10 @@ export default function Topbar({menuOpen , setMenuOpen}) {
                        <a href="https://www.linkedin.com/in/madhurima-banerjee-65415a191/"> <img src="images/linkedin.jpg" alt="linkedin" /></a>
                     </div>
                     <div className="itemContainer">
-                        <img onClick={()=>handleClick(false)} src="images/email.jpg" alt="email" />
+                        <img onClick={()=>setShowpopup(true)} src="images/email.jpg" alt="email" />
+                        <PopupMail trigger={showpopup} setTrigger={setShowpopup}>
+                        <span>madhurimabanerjee97@gmail.com</span>
+                        </PopupMail>
                     </div>
                 </div>
                 <div className="right">

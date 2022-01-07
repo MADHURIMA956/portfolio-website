@@ -1,0 +1,25 @@
+@import "../../global.scss";
+
+.popup {
+  position: fixed;
+  top: 10px;
+  width: 25%;
+  height: 5vh;
+  background-color: #ffffff;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -8px black;
+
+  .close-btn {
+    position: relative;
+    float: right;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: $mainColor;
+    color: #ffffff;
+  }
+}
