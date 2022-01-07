@@ -5,8 +5,7 @@ import { frontEndData,
     backEndData,
     programmingLangData,
     hostingPlatformData,
-    dataBaseData,
-    versonControlData } from "../../skilldata.jsx";
+    dataBaseData } from "../../skilldata.jsx";
 
 export default function Skill() {
    const [select, setSelect] = useState("front-end");
@@ -31,10 +30,6 @@ export default function Skill() {
         {
             id:"hosting Platform",
             title:"Hosting Platform"
-        },
-        {
-            id:"version Control",
-            title:"Version Control"
         }
     ];
 
@@ -54,9 +49,6 @@ export default function Skill() {
               break;
               case "hosting Platform" :
               setSkilldata(hostingPlatformData);
-              break;
-              case "version Control" :
-              setSkilldata(versonControlData);
               break;
               default:
                   setSkilldata(frontEndData);
