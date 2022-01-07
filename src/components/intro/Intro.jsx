@@ -17,7 +17,11 @@ export default function Intro() {
              <div className="imageCont">
                  <img src="images/profilePic.jpg" alt="" />
              </div>
-             <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, assumenda, expedita veritatis porro quia iure nisi facere dolorum ipsum odio libero sed nulla et rem dolor eos quis mollitia consectetur?</h3>
+             <h3>I am an aspiring Full-Stack Web Developer, looking for a role in an
+enthusiastic work environment, to enhance the knowledge and
+skills learned and apply technical skills to accomplish
+organizational goals.</h3>
+             <button>Get Resume</button>
          </div>
          <div className="right">
              <div className="wrapper">

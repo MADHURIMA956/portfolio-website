@@ -64,7 +64,7 @@ export default function Skill() {
     }, [select])
     return (
         <div className='skill' id='skill'>
-            <h1>Technical Skill</h1>
+            <h2>Technical Skill</h2>
             <ul>
                {List.map((item) => (
                    <SkillList title={item.title}
