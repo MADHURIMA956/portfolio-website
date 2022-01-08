@@ -1,7 +1,12 @@
 @import "../../global.scss";
 
 .intro {
-  background-color: #ffffff;
+  // background-color: #ffffff;
+  background-image: url("https://cdn.wallpapersafari.com/61/97/bckN9I.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
 
   @include mobile {
@@ -10,20 +15,20 @@
   }
 
   .left {
-    flex: 0.7;
+    flex: 0.5;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     overflow: hidden;
     @include mobile {
       margin-left: 0px;
+      flex: 0.7;
     }
     .imageCont {
       margin-left: 120px;
-      width: 200px;
-      height: 200px;
-      background-color: $mainColor;
-      border-radius: 50%;
+      width: 500px;
+      height: 700px;
+      border-radius: 15px 50px;
       display: flex;
       align-items: flex-end;
       justify-content: center;
@@ -35,7 +40,6 @@
       img {
         height: 100%;
         width: 100%;
-        border-radius: 50%;
       }
     }
     h3 {
@@ -66,7 +70,7 @@
     }
   }
   .right {
-    flex: 0.3;
+    flex: 0.5;
 
     .wrapper {
       width: 90%;
@@ -81,6 +85,7 @@
         margin: 0;
         padding: 0;
         align-items: center;
+        flex: 0.3;
       }
     }
     h1 {
@@ -100,7 +105,7 @@
       font-size: 30px;
       span {
         font-size: inherit;
-        color: $mainColor;
+        color: #ffffff;
       }
       .ityped-cursor {
         animation: blink 1s infinite;
@@ -128,6 +133,7 @@
     }
     img {
       width: 30px;
+      border-radius: 50%;
       animation: arrowBlink 2s infinite;
     }
     @keyframes arrowBlink {

@@ -1,7 +1,12 @@
 @import "../../global.scss";
 
 .works {
-  background-color: #eeebdd;
+  // background-color: #eeebdd;
+  background-image: url("https://media.istockphoto.com/photos/pink-purple-and-navy-blue-defocused-blurred-motion-gradient-abstract-picture-id1152472627?b=1&k=20&m=1152472627&s=170667a&w=0&h=vvWQ2EEU9VAh92XU0Mcr1GEAes0w_CeCJ3FKwsgqozY=");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
