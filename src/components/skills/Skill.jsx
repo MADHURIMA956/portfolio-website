@@ -57,6 +57,7 @@ export default function Skill() {
     return (
         <div className='skill' id='skill'>
             <h2>Technical Skill</h2>
+            <h3>Here are a few technologies that I have worked with:-</h3>
             <ul>
                {List.map((item) => (
                    <SkillList title={item.title}

@@ -5,6 +5,8 @@ import Skill from "./components/skills/Skill.jsx";
 import Work from "./components/works/Work.jsx";
 import Contact from "./components/contact/Contact.jsx";
 import Menu from "./components/menu/Menu.jsx";
+// import Footer from "./components/footer/Footer.jsx";
+
 
 import './app.scss'
 import { useState } from "react";
@@ -23,6 +25,7 @@ function App() {
         <Work />
         <Contact />
       </div>
+      {/* <Footer /> */}
     </div>
   );
 }

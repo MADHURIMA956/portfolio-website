@@ -61,10 +61,10 @@ export default function Intro() {
         },
         particles: {
           color: {
-            value: "#2a2e92",
+            value: "#ffffff",
           },
           links: {
-            color: "#2a2e92",
+            color: "#ffffff",
             distance: 150,
             enable: false,
             opacity: 0.5,
