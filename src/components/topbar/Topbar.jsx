@@ -10,7 +10,7 @@ export default function Topbar({menuOpen , setMenuOpen}) {
             <div className="wrapper">
                 <div className="left">
                     <div className="itemContainer">
-                        <a href="#intro"><img className="imgLogo" src="images/logo.jpg" alt="logo" /></a> <span >Madhurima</span>
+                        <a href="#intro"><img className="imgLogo" src="images/logo.png" alt="logo" /></a> <span >Madhurima</span>
                     </div>
 
                     <div className="itemContainer">
@@ -25,6 +25,12 @@ export default function Topbar({menuOpen , setMenuOpen}) {
                         <span>madhurimabanerjee97@gmail.com</span>
                         </PopupMail>
                     </div>
+                    {/* <div className="itemContainer">
+                        <img onClick={()=>setShowpopup(true)} src="images/phone.png" alt="phone-no" />
+                        <PopupMail trigger={showpopup} setTrigger={setShowpopup}>
+                        <span>+91-8240425891</span>
+                        </PopupMail>
+                    </div> */}
                 </div>
                 <div className="right">
                    <div className="humburger" onClick={() => setMenuOpen(!menuOpen)}>
