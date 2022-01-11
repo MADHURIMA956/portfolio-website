@@ -14,10 +14,10 @@ export default function Topbar({menuOpen , setMenuOpen}) {
                     </div>
 
                     <div className="itemContainer">
-                       <a href="https://github.com/MADHURIMA956"><img src="images/GitHub-icon.png" alt="github" /></a>
+                       <a href="https://github.com/MADHURIMA956" target="_blank" rel="noopener noreferrer"><img src="images/GitHub-icon.png" alt="github" /></a>
                     </div>
                     <div className="itemContainer">
-                       <a href="https://www.linkedin.com/in/madhurima-banerjee-65415a191/"> <img src="images/linkedin.jpg" alt="linkedin" /></a>
+                       <a href="https://www.linkedin.com/in/madhurima-banerjee-65415a191/" target="_blank" rel="noopener noreferrer"> <img src="images/linkedin.jpg" alt="linkedin" /></a>
                     </div>
                     <div className="itemContainer">
                         <img onClick={()=>setShowpopup(true)} src="images/email.jpg" alt="email" />

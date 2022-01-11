@@ -10,7 +10,7 @@ export default function About() {
             enthusiastic work environment, to enhance the knowledge and
             skills learned and apply technical skills to accomplish
             organizational goals.</h3></div>
-             <a href="https://drive.google.com/file/d/1KtCsMtHSC3bvCFYmHwMCezQLg6SGIaHp/view"><button >Get Resume</button></a>
+             <a href="https://drive.google.com/file/d/1qAxd_Oa40zjXSOyqbjgESeaqyyZ2JpGd/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button >Get Resume</button></a>
         </div>
     )
 }

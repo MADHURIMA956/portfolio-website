@@ -9,7 +9,7 @@ export default function Work() {
             id:"1",
             title:'Walmart-Clone',
             des:"Using HTML, CSS and Javascript, I have built with group of 4, a clone of Walmart which is an E-commerce website where you can buy products from anywhere.",
-            imageicon:"https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png",
+            imageicon:'Tech Skill: HTML, CSS, JS',
             btnCode: "Code",
             btnWebsite:"Website",
             image:"images/walmart-website.PNG",
@@ -20,8 +20,7 @@ export default function Work() {
             id:"2",
             title:'Intern-Theroy-Clone',
             des:"Using Node Js, Express Js and Javascript, EJS I have built with group of 5, a clone of Intern Theory where you can apply for internships and jobs.",
-            imageicon:
-            "https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png",
+            imageicon:'Tech Skill: EJS, JS, MongoDB, NodeJS',
             btnCode: "Code",
             btnWebsite:"Website",
             image:"images/intern-website.PNG",
@@ -37,7 +36,7 @@ export default function Work() {
     }
     return (
         <div className="works" id="works">
-           {/* <h2>Projects</h2> */}
+           <h2 className="title">My Projects</h2>
            <div className="slider" style={{transform:`translateX(-${currSlider *100}vw)`}}>
               {projectData.map(d=>(
               <div className="container">
@@ -48,11 +47,11 @@ export default function Work() {
                                <h2>{d.title}</h2>
                                <p>{d.des}</p>
                             <div className="project-icon">
-                                <img src={d.imageicon} alt=""/>
+                                <h4>{d.imageicon}</h4>
                             </div>
                             <div className="project-btn">
-                            <button><a href={d.code}>{d.btnCode}</a></button>
-                                <button><a href={d.website}>{d.btnWebsite}</a></button>
+                            <button><a href={d.code} target="_blank" rel="noopener noreferrer">{d.btnCode}</a></button>
+                                <button><a href={d.website} target="_blank" rel="noopener noreferrer">{d.btnWebsite}</a></button>
                             </div>
                            </div>
                            
