@@ -2,7 +2,7 @@ export const frontEndData = [
     {
         id:1,
         title : 'Html5',
-        image:'images/html5.png',
+        image:'images/html5.jpg',
     },
     {
         id:2,
@@ -12,7 +12,7 @@ export const frontEndData = [
     {
         id:3,
         title : 'JavaScript',
-        image: 'images/javascript.jpg'
+        image: 'images/javascript.png'
     },
     {
         id:4,
@@ -45,7 +45,7 @@ export const programmingLangData = [
     {
         id:1,
         title : 'JavaScript',
-        image: 'images/javascript.jpg'
+        image: 'images/javascript.png'
     },
     {
         id:2,

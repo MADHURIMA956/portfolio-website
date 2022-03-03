@@ -33,8 +33,12 @@ export default function Contact() {
                         <img  src="images/email.jpg" alt="logo" /> <span >madhurimabanerjee97@gmail.com</span>
                 </div>
                 <div className="itemContainer">
-                <a href="https://github.com/MADHURIMA956"><img className="imgLogo" src="images/GitHub-icon.png" alt="logo" /></a>
-                <a href="https://www.linkedin.com/in/madhurima-banerjee-65415a191/"> <img className="imgLogo" src="images/linkedin.jpg" alt="logo" /> </a>
+                <img className="imgLogo" src="images/GitHub-icon.png" alt="logo" />
+                <a href="https://github.com/MADHURIMA956" target="_blank" rel="noopener noreferrer" ><span className='specialVal'>MADHURIMA956</span></a>
+                </div>
+                <div className="itemContainer">
+                <img className="imgLogo" src="images/linkedin.jpg" alt="logo" />
+                <a href="https://www.linkedin.com/in/madhurima-banerjee-65415a191/" target="_blank" rel="noopener noreferrer">  <span className='specialVal'>madhurima-banerjee-65415a191</span></a>
                 </div>
                  </div>
             </div>

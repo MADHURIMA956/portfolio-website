@@ -42,6 +42,37 @@
       }
     }
     .right {
+      display: flex;
+      justify-content: space-between;
+      .resume {
+        margin: 0 20px;
+        a {
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+        }
+        a:hover {
+          color: #5800ff;
+        }
+        @include mobile {
+          display: none;
+        }
+      }
+      .itemContainer {
+        display: none;
+        @include mobile {
+          display: flex;
+          align-items: center;
+          margin: 0 20px;
+          margin-left: 10px;
+        }
+
+        img {
+          width: 20px;
+          cursor: pointer;
+          border-radius: 50%;
+        }
+      }
       .humburger {
         width: 30px;
         height: 25px;
@@ -61,6 +92,13 @@
   &.active {
     background-color: $mainColor;
     color: #ffffff;
+    .right {
+      .resume {
+        a {
+          color: white;
+        }
+      }
+    }
     .humburger {
       span {
         &:first-child {

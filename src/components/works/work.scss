@@ -121,8 +121,9 @@
                 margin-right: 10px;
                 width: 100%;
                 font-size: 12px;
+                font-weight: bold;
                 &:hover {
-                  color: red;
+                  color: #5800ff;
                   font-weight: bold;
                 }
                 @include mobile {

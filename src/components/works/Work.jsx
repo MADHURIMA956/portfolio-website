@@ -9,7 +9,7 @@ export default function Work() {
             id:"1",
             title:'Walmart-Clone',
             des:"Using HTML, CSS and Javascript, I have built with group of 4, a clone of Walmart which is an E-commerce website where you can buy products from anywhere.",
-            imageicon:'Tech Skill: HTML, CSS, JS',
+            imageicon:'TECH STACK : HTML, CSS, JS',
             btnCode: "Code",
             btnWebsite:"Website",
             image:"images/walmart-website.PNG",
@@ -20,19 +20,30 @@ export default function Work() {
             id:"2",
             title:'Intern-Theroy-Clone',
             des:"Using Node Js, Express Js and Javascript, EJS I have built with group of 5, a clone of Intern Theory where you can apply for internships and jobs.",
-            imageicon:'Tech Skill: EJS, JS, MongoDB, NodeJS',
+            imageicon:'TECH STACK : EJS, JS, MongoDB, NodeJS',
             btnCode: "Code",
             btnWebsite:"Website",
             image:"images/intern-website.PNG",
             code:"https://github.com/RoushanFW196/intern-theoryclone-unit3-project",
             website:"https://intern-theory-clone.herokuapp.com/InternTheory"
         },
+        {
+            id:"3",
+            title:'Quora-Clone',
+            des:"Using Tech React Js, Redux, Express Js, MongoDb, Chakra UI, I have built with group of 5, a clone of Quora where people can answer and ask questions and get detailed responses or troll responses.",
+            imageicon:'TECH STACK : React Js, Redux, Express Js, MongoDb',
+            btnCode: "Code",
+            btnWebsite:"Website",
+            image:"https://miro.medium.com/max/700/1*KtkhFJ13Gqy3Pi-rllecBQ.png?raw=true",
+            code:"https://github.com/Smrutiranjan-Patra/quora",
+            website:"https://quora-roan.vercel.app/"
+        },
        
     ];
     const handleClick=(way)=>{
         way === "left" 
-        ? setCurrSlider(currSlider > 0 ? currSlider -1 : 1) 
-        : setCurrSlider(currSlider<projectData.length -1? currSlider+1 : 0 ) 
+        ? setCurrSlider(currSlider > 0 ? currSlider -1 : 2) 
+        : setCurrSlider(currSlider < projectData.length -1 ? currSlider + 1 : 0 ) 
     }
     return (
         <div className="works" id="works">
