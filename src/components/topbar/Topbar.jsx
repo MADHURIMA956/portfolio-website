@@ -36,7 +36,7 @@ export default function Topbar({menuOpen , setMenuOpen}) {
                 </div>
                 <div className="right">
                     <div className="resume">
-                        <a href="https://drive.google.com/file/d/1DoXt6lpa65UsooK-NCclgMFpXUhwTaQt/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+                        <a href="https://drive.google.com/file/d/13bOGf9P72wXn6hq4FEaaqZGVq77LFg2D/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
                     </div>
                     <div className="itemContainer">
                        <a href="https://drive.google.com/file/d/1zqmzEQiPQ2DgSd9WPnmrDNyIBZt5D6zM/view?usp=sharing" target="_blank" rel="noopener noreferrer"> <img src="images/wr-resumes-logo.png" alt="resume" /></a>

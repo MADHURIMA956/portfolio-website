@@ -14,7 +14,7 @@ export default function Work() {
             btnWebsite:"Website",
             image:"images/walmart-website.PNG",
             code:"https://github.com/pabloescobar4/Walmart",
-            website:"https://madhurima956.github.io/walmart-clone.github.io/walmart/index001.html",
+            website:"https://walmart-clone.netlify.app/walmart/index001.html",
         },
         {
             id:"2",
